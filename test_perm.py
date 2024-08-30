@@ -33,7 +33,7 @@ class TestPermutations(unittest.TestCase):
         actual = permutation_func(['apple', 'banana'])
         self.assertEqual(sorted(actual), sorted(expected))
 
-    # Test with a list of strings
+    # Test single element
     def test_one_element(self):
         
         expected = [('apple',)]
@@ -69,7 +69,7 @@ class TestPermutations(unittest.TestCase):
 
 # TO DO BELOW:
 
-    # Test multiple elements and duplicates
+    # Test large list
     def test_large_list(self):
         expected = [('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'),
                     ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'i'),
@@ -80,7 +80,7 @@ class TestPermutations(unittest.TestCase):
         actual = permutation_func(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'], limit=5)
         self.assertEqual(sorted(actual), sorted(expected))
 
-    # Test multiple elements and duplicates
+    # Test large list with duplicates
     def test_large_list_duplicates(self):
         expected = [('a', 'a', 'b', 'b', 'c', 'c', 'd', 'd'),
                     ('a', 'a', 'b', 'b', 'c', 'd', 'c', 'd'),
@@ -96,7 +96,7 @@ class TestPermutations(unittest.TestCase):
         actual = permutation_func(['a', 'a', 'b', 'b', 'c', 'c', 'd', 'd'], limit=31)
         self.assertEqual(sorted(actual), sorted(expected))
 
-    # Test multiple elements and duplicates
+    # Test mixed data types
     def test_mixed_elements(self):
         # converted to set due to sort() function complexities
         # and used a set instead to solve permutations ordering
@@ -129,7 +129,7 @@ class TestPermutations(unittest.TestCase):
 
         self.assertEqual(actual, expected)
 
-    # Test mixed elements and duplicates
+    # Test large list with mixed elements and duplicates
     def test_large_mixed_duplicates_list(self):
         actual = set(permutation_func([3.563, 1j, 1j, 'apple', 2]))
 

@@ -1,9 +1,12 @@
 # pathloom-devops
 
-This repository contains two files. A permutations.py a file containg a simple permutations 
-function that takes in any data type and converts it to a sorted list. Another, test_perm.py
-which contains a comprehensive suite of unit tests to validate the functionality of
-permutations.py
+This repository contains two main files: permutations.py and test_perm.py. The permutations.py file 
+includes a function for generating permutations of any data type. The test_perm.py file provides a 
+suite of unit tests to validate the functionality of the permutations.py module.
 
-This repository also includes a continuous integration (CI) configuration file, python-ci.yml, which 
-automates the testing and setup process for Python projects using GitHub Actions.
+The repository also includes a CI configuration file named python-ci.yml. which automates the testing
+and setup process using GitHub Actions. This CI pipeline runs automatically whenever there are pushes
+to the repository, ensuring that new code is checked out and tested within a Python environment.
+
+If you want to run the test yourself in an editor, running the command... in the terminal will run
+the test suite.
