@@ -8,5 +8,6 @@ The repository also includes a CI configuration file named python-ci.yml. which 
 and setup process using GitHub Actions. This CI pipeline runs automatically whenever there are pushes
 to the repository, ensuring that new code is checked out and tested within a Python environment.
 
-If you want to run the test yourself in an editor, running the command... in the terminal will run
-the test suite.
+If you want to run the test yourself in an editor, running the "python .\test_perm.py" will run all tests.
+However, if you want to run individual unit tests, running "python .\test_perm.py TestPermutations.<test_name>"
+will also work.
