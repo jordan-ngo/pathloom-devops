@@ -184,14 +184,6 @@ class TestPermutations(unittest.TestCase):
                          (1j, 'apple', 1j, 3.563, 2),
                          (1j, 3.563, 2, 'apple', 1j)]))
 
-        print("Actual permutations:")
-        for perm in actual:
-            print(perm)
-
-        print("\nExpected permutations:")
-        for perm in expected:
-            print(perm)
-
         self.assertEqual(actual, expected)
         
 if __name__ == '__main__':
